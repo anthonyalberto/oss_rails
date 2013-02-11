@@ -37,7 +37,7 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-gem 'kaminari'
+gem 'kaminari', path: '/var/gems/kaminari'
 gem "geocoder"
 
 gem "awesome_print", :require => 'ap'
