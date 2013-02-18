@@ -1,4 +1,9 @@
 OssRails::Application.routes.draw do
+  resources :links
+
+  resources :comments
+
+
   resources :posts
 
 
