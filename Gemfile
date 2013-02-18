@@ -38,7 +38,7 @@ gem 'jquery-rails'
 # gem 'debugger'
 gem 'protected_attributes'
 
-gem 'kaminari'
+gem 'kaminari', path: '/var/gems/kaminari'
 gem "geocoder"
 
 gem "awesome_print", :require => 'ap'

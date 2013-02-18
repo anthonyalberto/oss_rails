@@ -2,7 +2,8 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.near("Montreal", 50).viewable.page(params[:page]).per(10)
+    #@posts = Post.near("Montreal", 50).viewable.page(params[:page]).per(10) #tried to reproduce Kaminari #156. Closed
+    @posts = Post.page(params[:page]).per(3)
 
     respond_to do |format|
       format.html # index.html.erb
